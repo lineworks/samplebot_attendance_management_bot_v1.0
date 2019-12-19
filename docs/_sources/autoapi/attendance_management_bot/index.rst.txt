@@ -1,0 +1,35 @@
+:mod:`attendance_management_bot`
+================================
+
+.. py:module:: attendance_management_bot
+
+
+Subpackages
+-----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 3
+
+   actions/index.rst
+   common/index.rst
+   externals/index.rst
+   model/index.rst
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   attendance_management_bot/index.rst
+   callbackHandler/index.rst
+   check_and_handle_actions/index.rst
+   constant/index.rst
+   contextlog/index.rst
+   initDB/index.rst
+   registerBot/index.rst
+   router/index.rst
+   settings/index.rst
+
+

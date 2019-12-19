@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>attendance_management_bot.attendance_management_bot &#8212; attendance_management_bot  documentation</title>
+    <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-attendance_management_bot.attendance_management_bot">
+<span id="attendance-management-bot-attendance-management-bot"></span><h1><a class="reference internal" href="#module-attendance_management_bot.attendance_management_bot" title="attendance_management_bot.attendance_management_bot"><code class="xref py py-mod docutils literal notranslate"><span class="pre">attendance_management_bot.attendance_management_bot</span></code></a><a class="headerlink" href="#module-attendance_management_bot.attendance_management_bot" title="Permalink to this headline">¶</a></h1>
+<p><p>launch attendance_management_bot</p>
+</p>
+<div class="section" id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="attendance_management_bot.attendance_management_bot.sig_handler">
+<code class="sig-prename descclassname">attendance_management_bot.attendance_management_bot.</code><code class="sig-name descname">sig_handler</code><span class="sig-paren">(</span><em class="sig-param">sig</em>, <em class="sig-param">_</em><span class="sig-paren">)</span><a class="headerlink" href="#attendance_management_bot.attendance_management_bot.sig_handler" title="Permalink to this definition">¶</a></dt>
+<dd><p>signal handler</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="attendance_management_bot.attendance_management_bot.kill_server">
+<code class="sig-prename descclassname">attendance_management_bot.attendance_management_bot.</code><code class="sig-name descname">kill_server</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#attendance_management_bot.attendance_management_bot.kill_server" title="Permalink to this definition">¶</a></dt>
+<dd><p>stop the ioloop</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="attendance_management_bot.attendance_management_bot.init_logger">
+<code class="sig-prename descclassname">attendance_management_bot.attendance_management_bot.</code><code class="sig-name descname">init_logger</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#attendance_management_bot.attendance_management_bot.init_logger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes the logger settings.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="attendance_management_bot.attendance_management_bot.check_init_bot">
+<code class="sig-prename descclassname">attendance_management_bot.attendance_management_bot.</code><code class="sig-name descname">check_init_bot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#attendance_management_bot.attendance_management_bot.check_init_bot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize bot no, check if the bot is initialized.
+If this function gets an exception, it is probably like script/registerBot.py.
+This is not executed or the execution failed.</p>
+<blockquote>
+<div><p>reference
+- <a class="reference external" href="https://developers.worksmobile.com/jp/document/3005001?lang=en">https://developers.worksmobile.com/jp/document/3005001?lang=en</a></p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="attendance_management_bot.attendance_management_bot.init_rich_menu_first">
+<code class="sig-prename descclassname">attendance_management_bot.attendance_management_bot.</code><code class="sig-name descname">init_rich_menu_first</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#attendance_management_bot.attendance_management_bot.init_rich_menu_first" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize rich menu API. Check also: attendance_management_bot/externals/richmenu.py</p>
+<p>reference
+- <a class="reference external" href="https://developers.worksmobile.com/jp/document/1005040?lang=en">https://developers.worksmobile.com/jp/document/1005040?lang=en</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="attendance_management_bot.attendance_management_bot.init_calendar_first">
+<code class="sig-prename descclassname">attendance_management_bot.attendance_management_bot.</code><code class="sig-name descname">init_calendar_first</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#attendance_management_bot.attendance_management_bot.init_calendar_first" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize calendar API.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="attendance_management_bot.attendance_management_bot.start_attendance_management_bot">
+<code class="sig-prename descclassname">attendance_management_bot.attendance_management_bot.</code><code class="sig-name descname">start_attendance_management_bot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#attendance_management_bot.attendance_management_bot.start_attendance_management_bot" title="Permalink to this definition">¶</a></dt>
+<dd><p>the attendance_management_bot launch code</p>
+<p>tornado.httpserver a non-blocking, single-threaded HTTP server.</p>
+<blockquote>
+<div><p>reference
+- <a class="reference external" href="https://www.tornadoweb.org/en/stable/httpserver.html">https://www.tornadoweb.org/en/stable/httpserver.html</a></p>
+</div></blockquote>
+<p>tornado.routing flexible routing implementation.</p>
+<blockquote>
+<div><p>reference
+- <a class="reference external" href="https://www.tornadoweb.org/en/stable/routing.html">https://www.tornadoweb.org/en/stable/routing.html</a></p>
+</div></blockquote>
+<p>If you use the event loop that comes with tornado, many third-party
+packages based on asyncio may not be used, such as aioredis.</p>
+<p>Message bot API overview.</p>
+<blockquote>
+<div><p>reference
+- <a class="reference external" href="https://developers.worksmobile.com/jp/document/3005001?lang=en">https://developers.worksmobile.com/jp/document/3005001?lang=en</a></p>
+</div></blockquote>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">attendance_management_bot</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">API Reference</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, worksmobile.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../_sources/autoapi/attendance_management_bot/attendance_management_bot/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

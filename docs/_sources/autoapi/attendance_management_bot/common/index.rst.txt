@@ -1,0 +1,19 @@
+:mod:`attendance_management_bot.common`
+=======================================
+
+.. py:module:: attendance_management_bot.common
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   contacts/index.rst
+   global_data/index.rst
+   local_timezone/index.rst
+   token/index.rst
+   utils/index.rst
+
+

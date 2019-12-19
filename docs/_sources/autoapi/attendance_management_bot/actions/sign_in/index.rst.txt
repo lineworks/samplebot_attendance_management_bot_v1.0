@@ -1,0 +1,40 @@
+:mod:`attendance_management_bot.actions.sign_in`
+================================================
+
+.. py:module:: attendance_management_bot.actions.sign_in
+
+.. autoapi-nested-parse::
+
+   Handle the user's check-in
+
+
+
+Module Contents
+---------------
+
+.. function:: sign_in_message()
+
+   generate check-in message
+
+   :return: button type message content
+
+
+.. function:: sign_in_content(account_id, current_date)
+
+   Update user status and generate check-in message.
+
+   :param account_id: user account id
+   :param current_date: current date by local time.
+   :retrurn: button type message content
+
+
+.. function:: sign_in(account_id, current_date, _, __)
+
+   Handle the user's check-in.
+
+   :param account_id: user account id.
+   :param current_date: current date by local time.
+   :param _: no use
+   :param __: no use
+
+

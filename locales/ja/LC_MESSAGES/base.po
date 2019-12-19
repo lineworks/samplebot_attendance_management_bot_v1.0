@@ -1,0 +1,28 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2019-11-08 20:20+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+#: test/test_confirm_out.py:17
+msgid "%A, %B %d"
+msgstr "%m月 %d日 %A"
+
+#: test/test_confirm_out.py:17
+msgid "Clock-out time has been registered. The total working hours for {date} is {hours} hours and {minutes} minutes."
+msgstr "退勤時間の登録が完了しました。{date}の合計勤務時間は {hours}時間 {minutes}分です。"
+
+#: test/test_i18n.py:5
+msgid "Hello, I'm an attendance management bot of LINE WORKS that helps your timeclock management and entry."
+msgstr "こんにちは。出退勤の時間を入力して 管理できるようサポートするLINE WORKSの 勤怠管理Botです。"
+

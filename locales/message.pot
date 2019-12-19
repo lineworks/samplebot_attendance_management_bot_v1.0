@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2019-12-03 18:46+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:60
+msgid "Current time"
+msgstr ""
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:61
+msgid "Manually enter"
+msgstr ""
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:82
+msgid "Yes"
+msgstr ""
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:87
+msgid "No"
+msgstr ""
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:102
+msgid "Please use the military time format with a total of 4 numerical digits (hhmm) when entering the time. For example, type 2020 to indicate 8:20 PM. "
+msgstr ""
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:119
+msgid "Clock-out time was recorded as being earlier than the time of clock-in. Please check the clock-out time again and re-enter it. "
+msgstr ""
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:137
+msgid "Sorry, but unable to comprehend your composed time. Please check the time entry method again, and enter the time."
+msgstr ""
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:153
+msgid "The text could not be understood. Please select the appropriate \"Record\" button on the bottom of the menu when you clock in or clock out."
+msgstr ""
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:172
+msgid "There is already a clock-in time. Please select \"Record\" on the bottom of the menu when you clock out."
+msgstr ""
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:180
+msgid "There is already a clock-out time. Please select \"Record\" on the bottom of the menu when you clock in."
+msgstr ""
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:188
+msgid "Today's clock-in time has not been registered. Please select \"Record clock-in\" on the bottom of the menu, and enter your clock-in time."
+msgstr ""
+

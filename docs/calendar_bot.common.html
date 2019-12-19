@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>calendar_bot.common package &#8212; calendar_bot  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="calendar-bot-common-package">
+<h1>calendar_bot.common package<a class="headerlink" href="#calendar-bot-common-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-calendar_bot.common.contacts">
+<span id="calendar-bot-common-contacts-module"></span><h2>calendar_bot.common.contacts module<a class="headerlink" href="#module-calendar_bot.common.contacts" title="Permalink to this headline">¶</a></h2>
+<p>get a user info by account id.</p>
+<dl class="function">
+<dt id="calendar_bot.common.contacts.get_user_info_by_account">
+<code class="sig-prename descclassname">calendar_bot.common.contacts.</code><code class="sig-name descname">get_user_info_by_account</code><span class="sig-paren">(</span><em class="sig-param">account_id</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.common.contacts.get_user_info_by_account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get user info of account.
+reference: <a class="reference external" href="https://developers.worksmobile.com/jp/document/1006004/v1?lang=en">https://developers.worksmobile.com/jp/document/1006004/v1?lang=en</a>
+If you fail to get external key,
+log in to the development console to check your configuration.
+reference: <a class="reference external" href="https://auth.worksmobile.com/login/login">https://auth.worksmobile.com/login/login</a>?
+accessUrl=https%3A%2F%2Fdevelopers.worksmobile.com
+%3A443%2Fconsole%2Fopenapi%2Fmain)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>external key</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.common.contacts.load_external_key">
+<code class="sig-prename descclassname">calendar_bot.common.contacts.</code><code class="sig-name descname">load_external_key</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.common.contacts.load_external_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>load external key.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>admin account’s external key</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-calendar_bot.common.global_data">
+<span id="calendar-bot-common-global-data-module"></span><h2>calendar_bot.common.global_data module<a class="headerlink" href="#module-calendar_bot.common.global_data" title="Permalink to this headline">¶</a></h2>
+<p>This is a global variable cache.</p>
+<dl class="function">
+<dt id="calendar_bot.common.global_data.set_value">
+<code class="sig-prename descclassname">calendar_bot.common.global_data.</code><code class="sig-name descname">set_value</code><span class="sig-paren">(</span><em class="sig-param">key</em>, <em class="sig-param">value</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.common.global_data.set_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets a value into the global variable cache.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>key</strong> – key</p></li>
+<li><p><strong>value</strong> – value</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>no</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.common.global_data.get_value">
+<code class="sig-prename descclassname">calendar_bot.common.global_data.</code><code class="sig-name descname">get_value</code><span class="sig-paren">(</span><em class="sig-param">key</em>, <em class="sig-param">def_value=None</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.common.global_data.get_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a value from the global variable cache.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>key</strong> – key</p></li>
+<li><p><strong>def_value</strong> – default value</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>value, If the key does not exist, the default value.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-calendar_bot.common.local_timezone">
+<span id="calendar-bot-common-local-timezone-module"></span><h2>calendar_bot.common.local_timezone module<a class="headerlink" href="#module-calendar_bot.common.local_timezone" title="Permalink to this headline">¶</a></h2>
+<p>deal time zone</p>
+<dl class="function">
+<dt id="calendar_bot.common.local_timezone.local_date_time">
+<code class="sig-prename descclassname">calendar_bot.common.local_timezone.</code><code class="sig-name descname">local_date_time</code><span class="sig-paren">(</span><em class="sig-param">time=None</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.common.local_timezone.local_date_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time to switch UTC time to a specific time zone.
+reference: <a class="reference external" href="https://docs.python.org/3/library/datetime.html">https://docs.python.org/3/library/datetime.html</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>time</strong> – Time to switch time zones</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>local time.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-calendar_bot.common.token">
+<span id="calendar-bot-common-token-module"></span><h2>calendar_bot.common.token module<a class="headerlink" href="#module-calendar_bot.common.token" title="Permalink to this headline">¶</a></h2>
+<p>Generate token according to JWT protocol</p>
+<dl class="function">
+<dt id="calendar_bot.common.token.create_tmp_token">
+<code class="sig-prename descclassname">calendar_bot.common.token.</code><code class="sig-name descname">create_tmp_token</code><span class="sig-paren">(</span><em class="sig-param">key_path</em>, <em class="sig-param">server_id</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.common.token.create_tmp_token" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function use JWT protocol to creates a temporary token
+for user authentication.</p>
+<p>Focus on the “Server Token (ID Registration Style)” section of
+the following documents.</p>
+<p>reference: <a class="reference external" href="https://developers.worksmobile.com/jp/document/1002002?lang=en">https://developers.worksmobile.com/jp/document/1002002?lang=en</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.common.token.generate_token">
+<code class="sig-prename descclassname">calendar_bot.common.token.</code><code class="sig-name descname">generate_token</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.common.token.generate_token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Using JWT protocol to create token.
+Focus on the “Server Token (ID Registration Style)” section of
+the following documents.</p>
+<p>reference: <a class="reference external" href="https://developers.worksmobile.com/jp/document/1002002?lang=en">https://developers.worksmobile.com/jp/document/1002002?lang=en</a></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-calendar_bot.common.utils">
+<span id="calendar-bot-common-utils-module"></span><h2>calendar_bot.common.utils module<a class="headerlink" href="#module-calendar_bot.common.utils" title="Permalink to this headline">¶</a></h2>
+<p>HTTP method providing authentication</p>
+<dl class="function">
+<dt id="calendar_bot.common.utils.auth_post">
+<code class="sig-prename descclassname">calendar_bot.common.utils.</code><code class="sig-name descname">auth_post</code><span class="sig-paren">(</span><em class="sig-param">url</em>, <em class="sig-param">data=None</em>, <em class="sig-param">headers=None</em>, <em class="sig-param">files=None</em>, <em class="sig-param">params=None</em>, <em class="sig-param">json=None</em>, <em class="sig-param">refresh_token_flag=False</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.common.utils.auth_post" title="Permalink to this definition">¶</a></dt>
+<dd><p>Encapsulates the post method of adding token to headers.
+Check also: calendar_bot/common/token.py
+parameters and return values, refer to:
+reference: <a class="reference external" href="https://3.python-requests.org/user/advanced/#request-and-response-objects">https://3.python-requests.org/user/advanced/#request-and-response-objects</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.common.utils.auth_get">
+<code class="sig-prename descclassname">calendar_bot.common.utils.</code><code class="sig-name descname">auth_get</code><span class="sig-paren">(</span><em class="sig-param">url</em>, <em class="sig-param">headers=None</em>, <em class="sig-param">refresh_token_flag=False</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.common.utils.auth_get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Encapsulates the get method of adding token to headers.
+Check also: calendar_bot/common/token.py
+parameters and return values, refer to:
+reference: <a class="reference external" href="https://3.python-requests.org/user/advanced/#request-and-response-objects">https://3.python-requests.org/user/advanced/#request-and-response-objects</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.common.utils.auth_del">
+<code class="sig-prename descclassname">calendar_bot.common.utils.</code><code class="sig-name descname">auth_del</code><span class="sig-paren">(</span><em class="sig-param">url</em>, <em class="sig-param">headers=None</em>, <em class="sig-param">refresh_token_flag=False</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.common.utils.auth_del" title="Permalink to this definition">¶</a></dt>
+<dd><p>Encapsulates the delete method of adding token to headers.
+Check also: calendar_bot/common/token.py
+parameters and return values, refer to:
+reference: <a class="reference external" href="https://3.python-requests.org/user/advanced/#request-and-response-objects">https://3.python-requests.org/user/advanced/#request-and-response-objects</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<code class="sig-prename descclassname">calendar_bot.common.utils.</code><code class="sig-name descname">auth_del</code><span class="sig-paren">(</span><em class="sig-param">url</em>, <em class="sig-param">headers=None</em>, <em class="sig-param">refresh_token_flag=False</em><span class="sig-paren">)</span></dt>
+<dd><p>Encapsulates the delete method of adding token to headers.
+Check also: calendar_bot/common/token.py
+parameters and return values, refer to:
+reference: <a class="reference external" href="https://3.python-requests.org/user/advanced/#request-and-response-objects">https://3.python-requests.org/user/advanced/#request-and-response-objects</a></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-calendar_bot.common">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-calendar_bot.common" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">calendar_bot</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, worksmobile.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/calendar_bot.common.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,32 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2019-12-05 14:58+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/confirm_in.py:61
+msgid "{account}'s clock-in time on {date}"
+msgstr ""
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/confirm_in.py:62
+msgid "%A, %B %d"
+msgstr ""
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/confirm_in.py:74
+msgid "Clock-in time has been registered."
+msgstr ""
+

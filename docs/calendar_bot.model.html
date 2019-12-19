@@ -1,0 +1,516 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>calendar_bot.model package &#8212; calendar_bot  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="calendar-bot-model-package">
+<h1>calendar_bot.model package<a class="headerlink" href="#calendar-bot-model-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-calendar_bot.model.calendarDBHandle">
+<span id="calendar-bot-model-calendardbhandle-module"></span><h2>calendar_bot.model.calendarDBHandle module<a class="headerlink" href="#module-calendar_bot.model.calendarDBHandle" title="Permalink to this headline">¶</a></h2>
+<p>bot_calendar_record table’s CRUD operation.
+This table is used to save the time of the user.
+Check also: scripts/initDB.py</p>
+<dl class="function">
+<dt id="calendar_bot.model.calendarDBHandle.set_schedule_by_user">
+<code class="sig-prename descclassname">calendar_bot.model.calendarDBHandle.</code><code class="sig-name descname">set_schedule_by_user</code><span class="sig-paren">(</span><em class="sig-param">schedule_id</em>, <em class="sig-param">account</em>, <em class="sig-param">date</em>, <em class="sig-param">begin</em>, <em class="sig-param">end</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.calendarDBHandle.set_schedule_by_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>insert schedule</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>schedule_id</strong> – schedule_id</p></li>
+<li><p><strong>account</strong> – user account</p></li>
+<li><p><strong>date</strong> – current date by local time.</p></li>
+<li><p><strong>begin</strong> – schedule begin time.</p></li>
+<li><p><strong>end</strong> – schedule end time.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>no</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.model.calendarDBHandle.get_schedule_by_user">
+<code class="sig-prename descclassname">calendar_bot.model.calendarDBHandle.</code><code class="sig-name descname">get_schedule_by_user</code><span class="sig-paren">(</span><em class="sig-param">account</em>, <em class="sig-param">date</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.calendarDBHandle.get_schedule_by_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>get schedule</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>account</strong> – user account</p></li>
+<li><p><strong>date</strong> – current date by local time.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>schedule id, begin time</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.model.calendarDBHandle.modify_schedule_by_user">
+<code class="sig-prename descclassname">calendar_bot.model.calendarDBHandle.</code><code class="sig-name descname">modify_schedule_by_user</code><span class="sig-paren">(</span><em class="sig-param">schedule_id</em>, <em class="sig-param">end</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.calendarDBHandle.modify_schedule_by_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>update schedule’s end time</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>schedule_id</strong> – schedule_id</p></li>
+<li><p><strong>end</strong> – schedule end time.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>no</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.model.calendarDBHandle.clean_schedule_by_user">
+<code class="sig-prename descclassname">calendar_bot.model.calendarDBHandle.</code><code class="sig-name descname">clean_schedule_by_user</code><span class="sig-paren">(</span><em class="sig-param">account</em>, <em class="sig-param">date</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.calendarDBHandle.clean_schedule_by_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>delete a schedule</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>account</strong> – user account</p></li>
+<li><p><strong>date</strong> – current date by local time.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>no</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-calendar_bot.model.data">
+<span id="calendar-bot-model-data-module"></span><h2>calendar_bot.model.data module<a class="headerlink" href="#module-calendar_bot.model.data" title="Permalink to this headline">¶</a></h2>
+<p>create message content</p>
+<dl class="function">
+<dt id="calendar_bot.model.data.make_postback_action">
+<code class="sig-prename descclassname">calendar_bot.model.data.</code><code class="sig-name descname">make_postback_action</code><span class="sig-paren">(</span><em class="sig-param">data</em>, <em class="sig-param">display_text=None</em>, <em class="sig-param">label=None</em>, <em class="sig-param">i18n_labels=None</em>, <em class="sig-param">i18n_display_texts=None</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.data.make_postback_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>make post back action.
+reference: <a class="reference external" href="https://developers.worksmobile.com/jp/document/1005050?lang=en">https://developers.worksmobile.com/jp/document/1005050?lang=en</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> – post back string</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>actions content</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.model.data.make_message_action">
+<code class="sig-prename descclassname">calendar_bot.model.data.</code><code class="sig-name descname">make_message_action</code><span class="sig-paren">(</span><em class="sig-param">label</em>, <em class="sig-param">post_back</em>, <em class="sig-param">text=None</em>, <em class="sig-param">i18n_labels=None</em>, <em class="sig-param">i18n_texts=None</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.data.make_message_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>make message action.
+reference: <a class="reference external" href="https://developers.worksmobile.com/jp/document/1005050?lang=en">https://developers.worksmobile.com/jp/document/1005050?lang=en</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>post_back</strong> – post back string</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>actions content</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.model.data.make_url_action">
+<code class="sig-prename descclassname">calendar_bot.model.data.</code><code class="sig-name descname">make_url_action</code><span class="sig-paren">(</span><em class="sig-param">label</em>, <em class="sig-param">url</em>, <em class="sig-param">i18n_labels=None</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.data.make_url_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>make url action.
+reference: <a class="reference external" href="https://developers.worksmobile.com/jp/document/1005050?lang=en">https://developers.worksmobile.com/jp/document/1005050?lang=en</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>url</strong> – User behavior will trigger the client to request this URL.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>actions content</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.model.data.make_normal_action">
+<code class="sig-prename descclassname">calendar_bot.model.data.</code><code class="sig-name descname">make_normal_action</code><span class="sig-paren">(</span><em class="sig-param">atype</em>, <em class="sig-param">label</em>, <em class="sig-param">i18n_labels=None</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.data.make_normal_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create camera, camera roll, location action.
+reference: <a class="reference external" href="https://developers.worksmobile.com/jp/document/1005050?lang=en">https://developers.worksmobile.com/jp/document/1005050?lang=en</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>atype</strong> – action’s type</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.model.data.make_quick_reply_item">
+<code class="sig-prename descclassname">calendar_bot.model.data.</code><code class="sig-name descname">make_quick_reply_item</code><span class="sig-paren">(</span><em class="sig-param">action</em>, <em class="sig-param">url=None</em>, <em class="sig-param">image_resource_id=None</em>, <em class="sig-param">i18n_thumbnail_image_urls=None</em>, <em class="sig-param">i18n_image_resource_ids=None</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.data.make_quick_reply_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create quick reply message item.
+reference: <a class="reference external" href="https://developers.worksmobile.com/jp/document/100500807?lang=en">https://developers.worksmobile.com/jp/document/100500807?lang=en</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>action</strong> – The user clicks the quick reply button to trigger this action.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>quick reply content.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.model.data.make_quick_reply">
+<code class="sig-prename descclassname">calendar_bot.model.data.</code><code class="sig-name descname">make_quick_reply</code><span class="sig-paren">(</span><em class="sig-param">replay_items</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.data.make_quick_reply" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create quick reply message.
+reference: <a class="reference external" href="https://developers.worksmobile.com/jp/document/100500807?lang=en">https://developers.worksmobile.com/jp/document/100500807?lang=en</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>replay_items</strong> – Array of return object of make_quick_reply_item function.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>quick reply content.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.model.data.make_text">
+<code class="sig-prename descclassname">calendar_bot.model.data.</code><code class="sig-name descname">make_text</code><span class="sig-paren">(</span><em class="sig-param">text</em>, <em class="sig-param">i18n_texts=None</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.data.make_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>make text.
+reference: <a class="reference external" href="https://developers.worksmobile.com/jp/document/100500801?lang=en">https://developers.worksmobile.com/jp/document/100500801?lang=en</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>text content.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.model.data.make_add_rich_menu">
+<code class="sig-prename descclassname">calendar_bot.model.data.</code><code class="sig-name descname">make_add_rich_menu</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">size</em>, <em class="sig-param">areas</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.data.make_add_rich_menu" title="Permalink to this definition">¶</a></dt>
+<dd><p>add rich menu content:
+reference: <a class="reference external" href="https://developers.worksmobile.com/jp/document/1005040?lang=en">https://developers.worksmobile.com/jp/document/1005040?lang=en</a>
+You can create a rich menu for the message bot by following these steps:
+1. Image uploads: using the “Upload Content” API
+2. Rich menu generation: using the “Register Message Rich Menu” API
+3. Rich Menu Image Settings: Use the “Message Rich Menu Image Settings” API</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.model.data.make_button">
+<code class="sig-prename descclassname">calendar_bot.model.data.</code><code class="sig-name descname">make_button</code><span class="sig-paren">(</span><em class="sig-param">text</em>, <em class="sig-param">actions</em>, <em class="sig-param">content_texts=None</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.data.make_button" title="Permalink to this definition">¶</a></dt>
+<dd><p>create button message content
+reference: <a class="reference external" href="https://developers.worksmobile.com/jp/document/100500804?lang=en">https://developers.worksmobile.com/jp/document/100500804?lang=en</a></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-calendar_bot.model.initStatusDBHandle">
+<span id="calendar-bot-model-initstatusdbhandle-module"></span><h2>calendar_bot.model.initStatusDBHandle module<a class="headerlink" href="#module-calendar_bot.model.initStatusDBHandle" title="Permalink to this headline">¶</a></h2>
+<p>system_init_status table’s CRUD operation.
+save the system Initialize status。
+Check also: scripts/initDB.py</p>
+<dl class="function">
+<dt id="calendar_bot.model.initStatusDBHandle.insert_init_status">
+<code class="sig-prename descclassname">calendar_bot.model.initStatusDBHandle.</code><code class="sig-name descname">insert_init_status</code><span class="sig-paren">(</span><em class="sig-param">action</em>, <em class="sig-param">extra</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.initStatusDBHandle.insert_init_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inserts the initialization status of an item after initialization.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>action</strong> – Initialized item</p></li>
+<li><p><strong>extra</strong> – Initialized data or status</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>no</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.model.initStatusDBHandle.update_init_status">
+<code class="sig-prename descclassname">calendar_bot.model.initStatusDBHandle.</code><code class="sig-name descname">update_init_status</code><span class="sig-paren">(</span><em class="sig-param">action</em>, <em class="sig-param">extra</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.initStatusDBHandle.update_init_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update the initialization status of an item after initialization.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>action</strong> – Initialized item</p></li>
+<li><p><strong>extra</strong> – Initialized data or status</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>no</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.model.initStatusDBHandle.get_init_status">
+<code class="sig-prename descclassname">calendar_bot.model.initStatusDBHandle.</code><code class="sig-name descname">get_init_status</code><span class="sig-paren">(</span><em class="sig-param">action</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.initStatusDBHandle.get_init_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an item initialized data or status.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>action</strong> – item</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>initialized data or status</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.model.initStatusDBHandle.delete_init_status">
+<code class="sig-prename descclassname">calendar_bot.model.initStatusDBHandle.</code><code class="sig-name descname">delete_init_status</code><span class="sig-paren">(</span><em class="sig-param">action</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.initStatusDBHandle.delete_init_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>delete an item initialized data or status.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>action</strong> – item</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>no</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-calendar_bot.model.postgreSqlPool">
+<span id="calendar-bot-model-postgresqlpool-module"></span><h2>calendar_bot.model.postgreSqlPool module<a class="headerlink" href="#module-calendar_bot.model.postgreSqlPool" title="Permalink to this headline">¶</a></h2>
+<p>Connection pool for database
+reference: <a class="reference external" href="https://cito.github.io/DBUtils/UsersGuide.html#pooleddb">https://cito.github.io/DBUtils/UsersGuide.html#pooleddb</a></p>
+<dl class="class">
+<dt id="calendar_bot.model.postgreSqlPool.PostGreSql">
+<em class="property">class </em><code class="sig-prename descclassname">calendar_bot.model.postgreSqlPool.</code><code class="sig-name descname">PostGreSql</code><a class="headerlink" href="#calendar_bot.model.postgreSqlPool.PostGreSql" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="calendar_bot.model.postgreSqlPool.PostGreSql.close">
+<code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.postgreSqlPool.PostGreSql.close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="calendar_bot.model.postgreSqlPool.PostGreSql.commit">
+<code class="sig-name descname">commit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.postgreSqlPool.PostGreSql.commit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="calendar_bot.model.postgreSqlPool.PostGreSql.cursor">
+<code class="sig-name descname">cursor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.postgreSqlPool.PostGreSql.cursor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="calendar_bot.model.postgreSqlPool.PostGreSql.execute">
+<code class="sig-name descname">execute</code><span class="sig-paren">(</span><em class="sig-param">sql</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.postgreSqlPool.PostGreSql.execute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="calendar_bot.model.postgreSqlPool.PostGreSql.fetchall">
+<code class="sig-name descname">fetchall</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.postgreSqlPool.PostGreSql.fetchall" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="calendar_bot.model.postgreSqlPool.PostGreSql.fetchone">
+<code class="sig-name descname">fetchone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.postgreSqlPool.PostGreSql.fetchone" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="calendar_bot.model.postgreSqlPool.PostGreSql.rollback">
+<code class="sig-name descname">rollback</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.postgreSqlPool.PostGreSql.rollback" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-calendar_bot.model.processStatusDBHandle">
+<span id="calendar-bot-model-processstatusdbhandle-module"></span><h2>calendar_bot.model.processStatusDBHandle module<a class="headerlink" href="#module-calendar_bot.model.processStatusDBHandle" title="Permalink to this headline">¶</a></h2>
+<p>bot_process_status table’s CRUD operation.
+save the user context.
+Check also: scripts/initDB.py</p>
+<dl class="function">
+<dt id="calendar_bot.model.processStatusDBHandle.insert_replace_status_by_user_date">
+<code class="sig-prename descclassname">calendar_bot.model.processStatusDBHandle.</code><code class="sig-name descname">insert_replace_status_by_user_date</code><span class="sig-paren">(</span><em class="sig-param">account</em>, <em class="sig-param">date</em>, <em class="sig-param">status</em>, <em class="sig-param">process=None</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.processStatusDBHandle.insert_replace_status_by_user_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>insert or update user’s status.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>account</strong> – user account</p></li>
+<li><p><strong>date</strong> – current date by local time.</p></li>
+<li><p><strong>status</strong> – user text input status.</p></li>
+<li><p><strong>process</strong> – processing progress.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Return false when status is None Else, Return None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.model.processStatusDBHandle.set_status_by_user_date">
+<code class="sig-prename descclassname">calendar_bot.model.processStatusDBHandle.</code><code class="sig-name descname">set_status_by_user_date</code><span class="sig-paren">(</span><em class="sig-param">account</em>, <em class="sig-param">date</em>, <em class="sig-param">status=None</em>, <em class="sig-param">process=None</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.processStatusDBHandle.set_status_by_user_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>update user’s status.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>account</strong> – user account</p></li>
+<li><p><strong>date</strong> – current date by local time.</p></li>
+<li><p><strong>status</strong> – user text input status.</p></li>
+<li><p><strong>process</strong> – processing progress.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>no</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.model.processStatusDBHandle.get_status_by_user">
+<code class="sig-prename descclassname">calendar_bot.model.processStatusDBHandle.</code><code class="sig-name descname">get_status_by_user</code><span class="sig-paren">(</span><em class="sig-param">account</em>, <em class="sig-param">date</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.processStatusDBHandle.get_status_by_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>select user’s status.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>account</strong> – user account</p></li>
+<li><p><strong>date</strong> – current date by local time.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>no</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.model.processStatusDBHandle.delete_status_by_user_date">
+<code class="sig-prename descclassname">calendar_bot.model.processStatusDBHandle.</code><code class="sig-name descname">delete_status_by_user_date</code><span class="sig-paren">(</span><em class="sig-param">account</em>, <em class="sig-param">date</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.processStatusDBHandle.delete_status_by_user_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>delete user’s status.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>account</strong> – user account</p></li>
+<li><p><strong>date</strong> – current date by local time.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>no</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="calendar_bot.model.processStatusDBHandle.clean_status_by_user">
+<code class="sig-prename descclassname">calendar_bot.model.processStatusDBHandle.</code><code class="sig-name descname">clean_status_by_user</code><span class="sig-paren">(</span><em class="sig-param">account</em>, <em class="sig-param">date</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar_bot.model.processStatusDBHandle.clean_status_by_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>delete a item.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>account</strong> – user account</p></li>
+<li><p><strong>date</strong> – current date by local time.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>no</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-calendar_bot.model">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-calendar_bot.model" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">calendar_bot</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, worksmobile.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/calendar_bot.model.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

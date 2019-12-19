@@ -1,0 +1,65 @@
+:mod:`attendance_management_bot.model.processStatusDBHandle`
+============================================================
+
+.. py:module:: attendance_management_bot.model.processStatusDBHandle
+
+.. autoapi-nested-parse::
+
+   bot_process_status table's CRUD operation.
+   save the user context.
+   Check also: scripts/initDB.py
+
+
+
+Module Contents
+---------------
+
+.. function:: insert_replace_status_by_user_date(account, date, status, process=None)
+
+   insert or update user's status.
+
+   :param account: user account
+   :param date: current date by local time.
+   :param status: user text input status.
+   :param process: processing progress.
+   :return: Return false when status is None Else, Return None
+
+
+.. function:: set_status_by_user_date(account, date, status=None, process=None)
+
+   update user's status.
+
+   :param account: user account
+   :param date: current date by local time.
+   :param status: user text input status.
+   :param process: processing progress.
+   :return: no
+
+
+.. function:: get_status_by_user(account, date)
+
+   select user's status.
+
+   :param account: user account
+   :param date: current date by local time.
+   :return: no
+
+
+.. function:: delete_status_by_user_date(account, date)
+
+   delete user's status.
+
+   :param account: user account
+   :param date: current date by local time.
+   :return: no
+
+
+.. function:: clean_status_by_user(account, date)
+
+   delete a item.
+
+   :param account: user account
+   :param date: current date by local time.
+   :return: no
+
+

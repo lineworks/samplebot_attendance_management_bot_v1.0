@@ -1,0 +1,22 @@
+:mod:`attendance_management_bot.actions.to_first`
+=================================================
+
+.. py:module:: attendance_management_bot.actions.to_first
+
+
+Module Contents
+---------------
+
+.. data:: _
+   
+
+   
+
+.. data:: LOGGER
+   
+
+   
+
+.. function:: to_first(account_id, ____, __, ___)
+
+

@@ -1,0 +1,50 @@
+:mod:`attendance_management_bot.model.initStatusDBHandle`
+=========================================================
+
+.. py:module:: attendance_management_bot.model.initStatusDBHandle
+
+.. autoapi-nested-parse::
+
+   system_init_status table's CRUD operation.
+   save the system Initialize status。
+   Check also: scripts/initDB.py
+
+
+
+Module Contents
+---------------
+
+.. function:: insert_init_status(action, extra)
+
+   Inserts the initialization status of an item after initialization.
+
+   :param action: Initialized item
+   :param extra: Initialized data or status
+   :return: no
+
+
+.. function:: update_init_status(action, extra)
+
+   Update the initialization status of an item after initialization.
+
+   :param action: Initialized item
+   :param extra: Initialized data or status
+   :return: no
+
+
+.. function:: get_init_status(action)
+
+   Get an item initialized data or status.
+
+   :param action: item
+   :return: initialized data or status
+
+
+.. function:: delete_init_status(action)
+
+   delete an item initialized data or status.
+
+   :param action: item
+   :return: no
+
+

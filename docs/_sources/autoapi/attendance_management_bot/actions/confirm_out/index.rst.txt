@@ -1,0 +1,26 @@
+:mod:`attendance_management_bot.actions.confirm_out`
+====================================================
+
+.. py:module:: attendance_management_bot.actions.confirm_out
+
+.. autoapi-nested-parse::
+
+   Deal confirm check-out
+
+
+
+Module Contents
+---------------
+
+.. function:: confirm_out(account_id, current_date, create_time, callback)
+
+   This function is triggered when the user clicks confirm check-out.
+   will be linked with the calendar internally.
+
+   :param account_id: user account id.
+   :param current_date: current date by local time.
+   :param create_time: Time the request arrived at the server.
+   :param callback: User triggered callback.
+   :return: None
+
+

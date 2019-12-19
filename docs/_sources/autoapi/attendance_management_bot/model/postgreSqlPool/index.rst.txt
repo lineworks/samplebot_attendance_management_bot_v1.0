@@ -1,0 +1,76 @@
+:mod:`attendance_management_bot.model.postgreSqlPool`
+=====================================================
+
+.. py:module:: attendance_management_bot.model.postgreSqlPool
+
+.. autoapi-nested-parse::
+
+   Connection pool for database
+
+   reference
+   - https://cito.github.io/DBUtils/UsersGuide.html#pooleddb
+
+
+
+Module Contents
+---------------
+
+.. py:class:: PostGreSql
+
+   .. attribute:: __pool
+      
+
+      
+
+   .. attribute:: _conn
+      
+
+      
+
+   .. attribute:: _cursor
+      
+
+      
+
+   .. method:: cursor(self)
+
+
+
+   .. method:: commit(self)
+
+
+
+   .. method:: rollback(self)
+
+
+
+   .. method:: execute(self, sql)
+
+
+
+   .. method:: fetchall(self)
+
+
+
+   .. method:: fetchone(self)
+
+
+
+   .. method:: close(self)
+
+
+
+   .. method:: __enter__(self)
+
+
+
+   .. method:: __exit__(self, type, value, tb)
+
+
+
+   .. method:: __get_conn()
+      :staticmethod:
+
+
+
+

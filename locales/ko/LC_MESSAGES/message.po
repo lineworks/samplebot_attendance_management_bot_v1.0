@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2019-12-03 18:46+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:60
+msgid "Current time"
+msgstr "현재 시간"
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:61
+msgid "Manually enter"
+msgstr "직접 입력"
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:82
+msgid "Yes"
+msgstr "예"
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:87
+msgid "No"
+msgstr "아니요"
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:102
+msgid "Please use the military time format with a total of 4 numerical digits (hhmm) when entering the time. For example, type 2020 to indicate 8:20 PM. "
+msgstr "시간을 입력하실 때는 총 4자리 숫자를 시,분 순서대로 기재해 주세요. 예를 들어, 오후 8시 20분을 기재 하고 싶으시면 2020이라는 숫자를 작성해 주시면 됩니다."
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:119
+msgid "Clock-out time was recorded as being earlier than the time of clock-in. Please check the clock-out time again and re-enter it. "
+msgstr "퇴근 시간을 출근 시간보다 이른 시간으로 작성하셨습니다. 다시 한번 퇴근 시간을 확인하시고 입력해주세요."
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:137
+msgid "Sorry, but unable to comprehend your composed time. Please check the time entry method again, and enter the time."
+msgstr "죄송합니다. 작성하신 시간을 이해하지 못하였습니다. 다시 한 번 시간 입력 방법을 확인하시고 시간을 입력해 주세요."
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:153
+msgid "The text could not be understood. Please select the appropriate \"Record\" button on the bottom of the menu when you clock in or clock out."
+msgstr "텍스트를 이해하지 못했습니다. 출근, 퇴근하실 때 하단 메뉴에서 각각에 맞는 ‘기록하기’ 버튼을 선택해 주세요 ."
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:172
+msgid "There is already a clock-in time. Please select \"Record\" on the bottom of the menu when you clock out."
+msgstr "이미 등록된 출근 시간이 있습니다. 퇴근하실 때, 하단 메뉴에서  ‘퇴근 기록하기’ 버튼을 선택해 주세요."
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:180
+msgid "There is already a clock-out time. Please select \"Record\" on the bottom of the menu when you clock in."
+msgstr "이미 등록된 퇴근 시간이 있습니다. 출근하실 때, 하단 메뉴에서 ‘출근 기록하기’ 버튼을 선택해 주세요."
+
+#:
+#: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/message.py:188
+msgid "Today's clock-in time has not been registered. Please select \"Record clock-in\" on the bottom of the menu, and enter your clock-in time."
+msgstr "오늘의 출근 시간이 등록되어 있지 않습니다. 하단의 메뉴에서 ‘출근 기록하기’ 버튼을 선택하여 출근 시간을 먼저 입력해 주세요."
+

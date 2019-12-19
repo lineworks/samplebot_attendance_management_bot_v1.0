@@ -1,0 +1,95 @@
+:mod:`attendance_management_bot.initDB`
+=======================================
+
+.. py:module:: attendance_management_bot.initDB
+
+.. autoapi-nested-parse::
+
+   Initialize the data structure.
+
+
+
+Module Contents
+---------------
+
+.. function:: create_calendar_table()
+
+   create calendar table.
+   Save the user's check-in and check-out schedule information.
+
+   =========== ===================================================================================
+   column      description
+   =========== ===================================================================================
+   schedule_id schedule id, The bot will create a daily schedule for each user who sign in and out.
+   account     user account id.
+   cur_date    current date by local time.
+   begin_time  schedule begin time.
+   end_time    schedule end time.
+   create_time record creation time.
+   =========== ===================================================================================
+
+
+.. function:: create_init_status_table()
+
+   create init status table, Save system initialization information(register bot,
+   register rich menu, create calender).
+
+   =========== ===========
+   column      description
+   =========== ===========
+   action      Initialized item (bot no, rich menu, calender id, ...),
+   extra       Initialized data or status,
+   create_time record creation time
+   =========== ===========
+
+
+.. function:: create_process_status_table()
+
+   create types and status tables. Save user's status information.
+
+   m_status: Is a enum type value，
+
+   =========== ===========
+   type        description
+   =========== ===========
+   wait_in     Waiting for the user to enter the check-in time status.
+   in_done     User input check-in time completed.
+   wait_out    Waiting for the user to enter the check-out time status.
+   out_done    User input check-out time completed.
+   =========== ===========
+
+   m_process: Is a enum type value
+
+   =============   ===========
+   type            description
+   =============   ===========
+   sign_in_done    Check-in operation completed.
+   sign_out_done   Check-out operation completed.
+   =============   ===========
+
+   If the type already exists, the duplicateobject exception will be thrown.
+
+   bot_process_status table
+
+   =========== ===========
+   column      description
+   =========== ===========
+   account     user account id,
+   cur_date    current date by local time,
+   status      is m_status value,
+   process     is m_process value,
+   create_time record creation time
+   =========== ===========
+
+
+.. function:: init_db()
+
+   Initialize the data structure.
+
+   Table list:
+
+   - bot_calendar_record
+   - system_init_status
+   - bot_process_status
+
+

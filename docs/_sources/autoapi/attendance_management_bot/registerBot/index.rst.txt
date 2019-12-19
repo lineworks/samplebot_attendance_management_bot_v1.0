@@ -1,0 +1,25 @@
+:mod:`attendance_management_bot.registerBot`
+============================================
+
+.. py:module:: attendance_management_bot.registerBot
+
+.. autoapi-nested-parse::
+
+   Initialize bot no.
+
+
+
+Module Contents
+---------------
+
+.. function:: init_bot()
+
+   Initialize bot info. If the BOT is not registered, the system will fail to start.
+
+   Before BOT registration,
+   the system_init_status table will be queried.
+   If BOT has been registered, it does not need to be re registered.
+   Otherwise, the bot will be saved in the system init status table after success,
+   indicating that the registration of BOT has been completed during initialization.
+
+

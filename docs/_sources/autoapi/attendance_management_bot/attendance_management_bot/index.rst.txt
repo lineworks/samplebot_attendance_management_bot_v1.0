@@ -1,0 +1,75 @@
+:mod:`attendance_management_bot.attendance_management_bot`
+==========================================================
+
+.. py:module:: attendance_management_bot.attendance_management_bot
+
+.. autoapi-nested-parse::
+
+   launch attendance_management_bot
+
+
+
+Module Contents
+---------------
+
+.. function:: sig_handler(sig, _)
+
+   signal handler
+
+
+.. function:: kill_server()
+
+   stop the ioloop
+
+
+.. function:: init_logger()
+
+   Initializes the logger settings.
+
+
+.. function:: check_init_bot()
+
+   Initialize bot no, check if the bot is initialized.
+   If this function gets an exception, it is probably like script/registerBot.py.
+   This is not executed or the execution failed.
+
+       reference
+       - https://developers.worksmobile.com/jp/document/3005001?lang=en
+
+
+.. function:: init_rich_menu_first()
+
+   Initialize rich menu API. Check also: attendance_management_bot/externals/richmenu.py
+
+   reference
+   - https://developers.worksmobile.com/jp/document/1005040?lang=en
+
+
+.. function:: init_calendar_first()
+
+   Initialize calendar API.
+
+
+.. function:: start_attendance_management_bot()
+
+   the attendance_management_bot launch code
+
+   tornado.httpserver a non-blocking, single-threaded HTTP server.
+
+       reference
+       - https://www.tornadoweb.org/en/stable/httpserver.html
+
+   tornado.routing flexible routing implementation.
+
+       reference
+       - https://www.tornadoweb.org/en/stable/routing.html
+
+   If you use the event loop that comes with tornado, many third-party
+   packages based on asyncio may not be used, such as aioredis.
+
+   Message bot API overview.
+
+       reference
+       - https://developers.worksmobile.com/jp/document/3005001?lang=en
+
+

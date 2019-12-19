@@ -1,0 +1,80 @@
+:mod:`attendance_management_bot.actions.message`
+================================================
+
+.. py:module:: attendance_management_bot.actions.message
+
+.. autoapi-nested-parse::
+
+   common message
+
+
+
+Module Contents
+---------------
+
+.. py:class:: TimeStruct(sign_time)
+
+   to localize timestamp time
+
+
+.. function:: create_button_actions(direct_sign_callback, manual_sign_callback)
+
+   Create the message body of the button template of two buttons.
+   Check also: attendance_management_bot/model/data.py
+
+       reference
+       - https://developers.worksmobile.com/jp/document/100500804?lang=en
+
+   :param direct_sign_callback: callback string for the first button.
+   :param manual_sign_callback: callback string for the seconds button.
+
+
+.. function:: create_quick_replay_items(confirm_callback, previous_callback)
+
+   Building a quick reply floating window for messages.
+   Check also: attendance_management_bot/model/data.py
+
+       reference
+       - https://developers.worksmobile.com/jp/document/100500807?lang=en
+
+   :param confirm_callback: callback string for the first button.
+   :param previous_callback: callback string for the seconds button.
+   :return: quick replay items
+
+
+.. function:: prompt_input()
+
+   Format to remind users to enter time.
+
+   :return: text type message
+
+
+.. function:: number_message()
+
+   Non digital message entered.
+
+   :return: text type message
+
+
+.. function:: error_message()
+
+   Wrong data entered
+
+   :return: text type message
+
+
+.. function:: invalid_message()
+
+   Invalid input data reminder.
+
+   :return: text type message
+
+
+.. function:: reminder_message(process)
+
+   Illegal request reminder.
+
+   :param process: Current user's progress
+   :return: text type message
+
+

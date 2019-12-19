@@ -1,0 +1,26 @@
+:mod:`attendance_management_bot.actions`
+========================================
+
+.. py:module:: attendance_management_bot.actions
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   confirm_in/index.rst
+   confirm_out/index.rst
+   deal_message/index.rst
+   direct_sign_in/index.rst
+   direct_sign_out/index.rst
+   manual_sign_in/index.rst
+   manual_sign_out/index.rst
+   message/index.rst
+   sign_in/index.rst
+   sign_out/index.rst
+   start/index.rst
+   to_first/index.rst
+
+

@@ -1,0 +1,55 @@
+:mod:`attendance_management_bot.model.calendarDBHandle`
+=======================================================
+
+.. py:module:: attendance_management_bot.model.calendarDBHandle
+
+.. autoapi-nested-parse::
+
+   bot_calendar_record table's CRUD operation.
+   This table is used to save the time of the user.
+   Check also: scripts/initDB.py
+
+
+
+Module Contents
+---------------
+
+.. function:: set_schedule_by_user(schedule_id, account, date, begin, end)
+
+   insert schedule
+
+   :param schedule_id: schedule_id
+   :param account: user account
+   :param date: current date by local time.
+   :param begin: schedule begin time.
+   :param end: schedule end time.
+   :return: no
+
+
+.. function:: get_schedule_by_user(account, date)
+
+   get schedule
+
+   :param account: user account
+   :param date: current date by local time.
+   :return: schedule id, begin time
+
+
+.. function:: modify_schedule_by_user(schedule_id, end)
+
+   update schedule's end time
+
+   :param schedule_id: schedule_id
+   :param end: schedule end time.
+   :return: no
+
+
+.. function:: clean_schedule_by_user(account, date)
+
+   delete a schedule
+
+   :param account: user account
+   :param date: current date by local time.
+   :return: no
+
+

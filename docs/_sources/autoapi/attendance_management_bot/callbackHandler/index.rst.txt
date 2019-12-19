@@ -1,0 +1,33 @@
+:mod:`attendance_management_bot.callbackHandler`
+================================================
+
+.. py:module:: attendance_management_bot.callbackHandler
+
+.. autoapi-nested-parse::
+
+   Process requests of users
+
+
+
+Module Contents
+---------------
+
+.. py:class:: CallbackHandler
+
+   Bases: :class:`tornado.web.RequestHandler`
+
+   Process business requests of users.
+
+   tornado.web.RequestHandler base class for HTTP request handlers.
+
+       reference
+       - https://www.tornadoweb.org/en/stable/web.html
+
+   .. method:: post(self)
+
+
+      Implement the handle to corresponding HTTP method.
+      Check also: attendance_management_bot/router.py
+
+
+

@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>attendance_management_bot.initDB &#8212; attendance_management_bot  documentation</title>
+    <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-attendance_management_bot.initDB">
+<span id="attendance-management-bot-initdb"></span><h1><a class="reference internal" href="#module-attendance_management_bot.initDB" title="attendance_management_bot.initDB"><code class="xref py py-mod docutils literal notranslate"><span class="pre">attendance_management_bot.initDB</span></code></a><a class="headerlink" href="#module-attendance_management_bot.initDB" title="Permalink to this headline">¶</a></h1>
+<p><p>Initialize the data structure.</p>
+</p>
+<div class="section" id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="attendance_management_bot.initDB.create_calendar_table">
+<code class="sig-prename descclassname">attendance_management_bot.initDB.</code><code class="sig-name descname">create_calendar_table</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#attendance_management_bot.initDB.create_calendar_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>create calendar table.
+Save the user’s check-in and check-out schedule information.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 88%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>column</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>schedule_id</p></td>
+<td><p>schedule id, The bot will create a daily schedule for each user who sign in and out.</p></td>
+</tr>
+<tr class="row-odd"><td><p>account</p></td>
+<td><p>user account id.</p></td>
+</tr>
+<tr class="row-even"><td><p>cur_date</p></td>
+<td><p>current date by local time.</p></td>
+</tr>
+<tr class="row-odd"><td><p>begin_time</p></td>
+<td><p>schedule begin time.</p></td>
+</tr>
+<tr class="row-even"><td><p>end_time</p></td>
+<td><p>schedule end time.</p></td>
+</tr>
+<tr class="row-odd"><td><p>create_time</p></td>
+<td><p>record creation time.</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="attendance_management_bot.initDB.create_init_status_table">
+<code class="sig-prename descclassname">attendance_management_bot.initDB.</code><code class="sig-name descname">create_init_status_table</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#attendance_management_bot.initDB.create_init_status_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>create init status table, Save system initialization information(register bot,
+register rich menu, create calender).</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 83%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>column</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>action</p></td>
+<td><p>Initialized item (bot no, rich menu, calender id, …),</p></td>
+</tr>
+<tr class="row-odd"><td><p>extra</p></td>
+<td><p>Initialized data or status,</p></td>
+</tr>
+<tr class="row-even"><td><p>create_time</p></td>
+<td><p>record creation time</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="attendance_management_bot.initDB.create_process_status_table">
+<code class="sig-prename descclassname">attendance_management_bot.initDB.</code><code class="sig-name descname">create_process_status_table</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#attendance_management_bot.initDB.create_process_status_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>create types and status tables. Save user’s status information.</p>
+<p>m_status: Is a enum type value，</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 84%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>type</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>wait_in</p></td>
+<td><p>Waiting for the user to enter the check-in time status.</p></td>
+</tr>
+<tr class="row-odd"><td><p>in_done</p></td>
+<td><p>User input check-in time completed.</p></td>
+</tr>
+<tr class="row-even"><td><p>wait_out</p></td>
+<td><p>Waiting for the user to enter the check-out time status.</p></td>
+</tr>
+<tr class="row-odd"><td><p>out_done</p></td>
+<td><p>User input check-out time completed.</p></td>
+</tr>
+</tbody>
+</table>
+<p>m_process: Is a enum type value</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 70%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>type</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>sign_in_done</p></td>
+<td><p>Check-in operation completed.</p></td>
+</tr>
+<tr class="row-odd"><td><p>sign_out_done</p></td>
+<td><p>Check-out operation completed.</p></td>
+</tr>
+</tbody>
+</table>
+<p>If the type already exists, the duplicateobject exception will be thrown.</p>
+<p>bot_process_status table</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>column</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>account</p></td>
+<td><p>user account id,</p></td>
+</tr>
+<tr class="row-odd"><td><p>cur_date</p></td>
+<td><p>current date by local time,</p></td>
+</tr>
+<tr class="row-even"><td><p>status</p></td>
+<td><p>is m_status value,</p></td>
+</tr>
+<tr class="row-odd"><td><p>process</p></td>
+<td><p>is m_process value,</p></td>
+</tr>
+<tr class="row-even"><td><p>create_time</p></td>
+<td><p>record creation time</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="attendance_management_bot.initDB.init_db">
+<code class="sig-prename descclassname">attendance_management_bot.initDB.</code><code class="sig-name descname">init_db</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#attendance_management_bot.initDB.init_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize the data structure.</p>
+<p>Table list:</p>
+<ul class="simple">
+<li><p>bot_calendar_record</p></li>
+<li><p>system_init_status</p></li>
+<li><p>bot_process_status</p></li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">attendance_management_bot</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">API Reference</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, worksmobile.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../_sources/autoapi/attendance_management_bot/initDB/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

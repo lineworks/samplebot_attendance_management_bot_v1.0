@@ -1,0 +1,40 @@
+:mod:`attendance_management_bot.actions.sign_out`
+=================================================
+
+.. py:module:: attendance_management_bot.actions.sign_out
+
+.. autoapi-nested-parse::
+
+   Handle the user's check-out
+
+
+
+Module Contents
+---------------
+
+.. function:: sign_out_message()
+
+   generate check-out message
+
+   :return: button type message content
+
+
+.. function:: sign_out_content(account_id, current_date)
+
+   Update user status and generate check-out message.
+
+   :param account_id: user account id
+   :param current_date: current date by local time.
+   :return: button type message content
+
+
+.. function:: sign_out(account_id, current_date, _, __)
+
+   Handle the user's check-out.
+
+   :param account_id: user account id.
+   :param current_date: current date by local time.
+   :param _: no use
+   :param __: no use
+
+

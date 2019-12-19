@@ -1,0 +1,61 @@
+:mod:`attendance_management_bot.externals.calendar_req`
+=======================================================
+
+.. py:module:: attendance_management_bot.externals.calendar_req
+
+.. autoapi-nested-parse::
+
+   Provides calendar API related functions
+
+
+
+Module Contents
+---------------
+
+.. function:: make_icalendar_data(uid, summary, current, end, begin, account_id, create_flag=False)
+
+   Generate iCalendar data format message body.
+
+   reference
+   - https://developers.worksmobile.com/jp/document/1007011?lang=en
+
+
+.. function:: create_calendar()
+
+   create calender.
+
+       reference
+       - https://developers.worksmobile.com/jp/document/100702701?lang=en
+
+   :return: calendar id.
+
+
+.. function:: create_schedule(current, end, begin, account_id, title)
+
+   create schedule.
+
+       reference
+       - https://developers.worksmobile.com/jp/document/100702703?lang=en
+
+   :return: schedule id.
+
+
+.. function:: modify_schedule(calendar_uid, current, end, begin, account_id, title)
+
+   modify schedule.
+
+       reference
+       - https://developers.worksmobile.com/jp/document/100702704?lang=en
+
+   :return: schedule id.
+
+
+.. function:: init_calendar()
+
+   init calendar.
+   The calendar initialization function is called to generate
+   the calendar id when the system starts.
+
+   :return: calendar id
+
+

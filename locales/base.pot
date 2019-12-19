@@ -1,0 +1,29 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2019-11-13 18:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: test/test_confirm_out.py:29
+msgid "%A, %B %d"
+msgstr ""
+
+#: test/test_confirm_out.py:43
+msgid "Clock-out time has been registered. The total working hours for {date} is {hours} hours and {minutes} minutes."
+msgstr ""
+
+#: test/test_i18n.py:7
+msgid "Hello, I'm an attendance management bot of LINE WORKS that helps your timeclock management and entry."
+msgstr ""
+

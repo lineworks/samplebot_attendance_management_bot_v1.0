@@ -1,0 +1,17 @@
+:mod:`attendance_management_bot.externals`
+==========================================
+
+.. py:module:: attendance_management_bot.externals
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   calendar_req/index.rst
+   richmenu/index.rst
+   send_message/index.rst
+
+

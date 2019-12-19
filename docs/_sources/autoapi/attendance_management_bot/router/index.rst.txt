@@ -1,0 +1,28 @@
+:mod:`attendance_management_bot.router`
+=======================================
+
+.. py:module:: attendance_management_bot.router
+
+.. autoapi-nested-parse::
+
+   the url to handler route
+
+
+
+Module Contents
+---------------
+
+.. function:: getRouter()
+
+   get the app with route info
+
+       reference
+       - https://www.tornadoweb.org/en/stable/web.html
+
+   StaticFileHandler is a simple handler that can serve static content
+   from a directory.
+
+       reference
+       - https://www.tornadoweb.org/en/stable/web.html#tornado.web.StaticFileHandler
+
+

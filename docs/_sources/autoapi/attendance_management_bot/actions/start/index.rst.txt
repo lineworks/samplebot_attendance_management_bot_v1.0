@@ -1,0 +1,45 @@
+:mod:`attendance_management_bot.actions.start`
+==============================================
+
+.. py:module:: attendance_management_bot.actions.start
+
+.. autoapi-nested-parse::
+
+   Start using robots
+
+
+
+Module Contents
+---------------
+
+.. function:: image_introduce()
+
+   This function constructs three image carousels for self introduction.
+   Check also: attendance_management_bot/model/data.py
+
+       reference
+       - https://developers.worksmobile.com/jp/document/100500809?lang=en
+
+   :return: image carousels type message content.
+
+
+.. function:: sign(account_id)
+
+   Set up rich menu for chat with users.
+   Check also: attendance_management_bot/model/data.py
+
+       reference
+       - https://developers.worksmobile.com/jp/document/1005040?lang=en
+
+   :param account_id: user account id
+
+
+.. function:: start(account_id, _, __, ___)
+
+   Handle the user start using robots.
+   Send the robot's self introduction information,
+   and the chat room is bound with rich menu.
+
+   :param account_id: user account id.
+
+

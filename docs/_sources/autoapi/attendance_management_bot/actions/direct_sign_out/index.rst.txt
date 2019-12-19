@@ -1,0 +1,26 @@
+:mod:`attendance_management_bot.actions.direct_sign_out`
+========================================================
+
+.. py:module:: attendance_management_bot.actions.direct_sign_out
+
+.. autoapi-nested-parse::
+
+   Handle the user's direct check-out
+
+
+
+Module Contents
+---------------
+
+.. function:: deal_sign_out_message(sign_time, manual_flag=False)
+
+   Generate a message returned to the user when checking out.
+
+   :param sign_time: The user's check-in time is a timestamp.
+   :param manual_flag: Boolean value. True is manually enters time.
+   :return: message content is a json.
+
+
+.. function:: deal_sign_out(account_id, current_date, sign_time, manual_flag=False)
+
+

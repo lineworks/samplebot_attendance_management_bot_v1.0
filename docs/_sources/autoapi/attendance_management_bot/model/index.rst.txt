@@ -1,0 +1,20 @@
+:mod:`attendance_management_bot.model`
+======================================
+
+.. py:module:: attendance_management_bot.model
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   calendarDBHandle/index.rst
+   data/index.rst
+   i18n_data/index.rst
+   initStatusDBHandle/index.rst
+   postgreSqlPool/index.rst
+   processStatusDBHandle/index.rst
+
+

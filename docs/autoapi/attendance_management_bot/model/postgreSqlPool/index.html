@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>attendance_management_bot.model.postgreSqlPool &#8212; attendance_management_bot  documentation</title>
+    <link rel="stylesheet" href="../../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-attendance_management_bot.model.postgreSqlPool">
+<span id="attendance-management-bot-model-postgresqlpool"></span><h1><a class="reference internal" href="#module-attendance_management_bot.model.postgreSqlPool" title="attendance_management_bot.model.postgreSqlPool"><code class="xref py py-mod docutils literal notranslate"><span class="pre">attendance_management_bot.model.postgreSqlPool</span></code></a><a class="headerlink" href="#module-attendance_management_bot.model.postgreSqlPool" title="Permalink to this headline">¶</a></h1>
+<p><p>Connection pool for database</p>
+<p>reference
+- <a class="reference external" href="https://cito.github.io/DBUtils/UsersGuide.html#pooleddb">https://cito.github.io/DBUtils/UsersGuide.html#pooleddb</a></p>
+</p>
+<div class="section" id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="attendance_management_bot.model.postgreSqlPool.PostGreSql">
+<em class="property">class </em><code class="sig-prename descclassname">attendance_management_bot.model.postgreSqlPool.</code><code class="sig-name descname">PostGreSql</code><a class="headerlink" href="#attendance_management_bot.model.postgreSqlPool.PostGreSql" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="attendance_management_bot.model.postgreSqlPool.PostGreSql.__pool">
+<code class="sig-name descname">__pool</code><a class="headerlink" href="#attendance_management_bot.model.postgreSqlPool.PostGreSql.__pool" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="attendance_management_bot.model.postgreSqlPool.PostGreSql._conn">
+<code class="sig-name descname">_conn</code><a class="headerlink" href="#attendance_management_bot.model.postgreSqlPool.PostGreSql._conn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="attendance_management_bot.model.postgreSqlPool.PostGreSql._cursor">
+<code class="sig-name descname">_cursor</code><a class="headerlink" href="#attendance_management_bot.model.postgreSqlPool.PostGreSql._cursor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="attendance_management_bot.model.postgreSqlPool.PostGreSql.cursor">
+<code class="sig-name descname">cursor</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#attendance_management_bot.model.postgreSqlPool.PostGreSql.cursor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="attendance_management_bot.model.postgreSqlPool.PostGreSql.commit">
+<code class="sig-name descname">commit</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#attendance_management_bot.model.postgreSqlPool.PostGreSql.commit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="attendance_management_bot.model.postgreSqlPool.PostGreSql.rollback">
+<code class="sig-name descname">rollback</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#attendance_management_bot.model.postgreSqlPool.PostGreSql.rollback" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="attendance_management_bot.model.postgreSqlPool.PostGreSql.execute">
+<code class="sig-name descname">execute</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">sql</em><span class="sig-paren">)</span><a class="headerlink" href="#attendance_management_bot.model.postgreSqlPool.PostGreSql.execute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="attendance_management_bot.model.postgreSqlPool.PostGreSql.fetchall">
+<code class="sig-name descname">fetchall</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#attendance_management_bot.model.postgreSqlPool.PostGreSql.fetchall" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="attendance_management_bot.model.postgreSqlPool.PostGreSql.fetchone">
+<code class="sig-name descname">fetchone</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#attendance_management_bot.model.postgreSqlPool.PostGreSql.fetchone" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="attendance_management_bot.model.postgreSqlPool.PostGreSql.close">
+<code class="sig-name descname">close</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#attendance_management_bot.model.postgreSqlPool.PostGreSql.close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="attendance_management_bot.model.postgreSqlPool.PostGreSql.__enter__">
+<code class="sig-name descname">__enter__</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#attendance_management_bot.model.postgreSqlPool.PostGreSql.__enter__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="attendance_management_bot.model.postgreSqlPool.PostGreSql.__exit__">
+<code class="sig-name descname">__exit__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">type</em>, <em class="sig-param">value</em>, <em class="sig-param">tb</em><span class="sig-paren">)</span><a class="headerlink" href="#attendance_management_bot.model.postgreSqlPool.PostGreSql.__exit__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="attendance_management_bot.model.postgreSqlPool.PostGreSql.__get_conn">
+<em class="property">static </em><code class="sig-name descname">__get_conn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#attendance_management_bot.model.postgreSqlPool.PostGreSql.__get_conn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../index.html">attendance_management_bot</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../index.html">API Reference</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, worksmobile.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../../_sources/autoapi/attendance_management_bot/model/postgreSqlPool/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
