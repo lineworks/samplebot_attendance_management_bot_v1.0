@@ -20,7 +20,7 @@ See the official API documentation for more information.
 * [Korean](https://developers.worksmobile.com/document/10050700301?lang=ko)
 
 ## Reference
-[Click here](https://worksmobile.github.io/samplebot_attendance_management_bot/) to see details on the attendance management bot source code.
+[Click here](https://lineworks.github.io/samplebot_attendance_management_bot/) to see details on the attendance management bot source code.
 
 ## Furthur Inquiries
 Kindly leave a comment on Github Issues. 
