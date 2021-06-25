@@ -23,6 +23,6 @@ msgid "Clock-out time has been registered. The total working hours for {date} is
 msgstr "Clock-out time has been registered. The total working hours for {date} is {hours} hours and {minutes} minutes."
 
 #: test/test_i18n.py:5
-msgid "Hello, I'm an attendance management bot of LINE WORKS that helps your timeclock management and entry."
-msgstr "Hello, I'm an attendance management bot of LINE WORKS that helps your timeclock management and entry."
+msgid "Hello, I'm an attendance management bot of WORKS that helps your timeclock management and entry."
+msgstr "Hello, I'm an attendance management bot of WORKS that helps your timeclock management and entry."
 

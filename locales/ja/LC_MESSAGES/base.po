@@ -23,6 +23,6 @@ msgid "Clock-out time has been registered. The total working hours for {date} is
 msgstr "退勤時間の登録が完了しました。{date}の合計勤務時間は {hours}時間 {minutes}分です。"
 
 #: test/test_i18n.py:5
-msgid "Hello, I'm an attendance management bot of LINE WORKS that helps your timeclock management and entry."
-msgstr "こんにちは。出退勤の時間を入力して 管理できるようサポートするLINE WORKSの 勤怠管理Botです。"
+msgid "Hello, I'm an attendance management bot of WORKS that helps your timeclock management and entry."
+msgstr "こんにちは。出退勤の時間を入力して 管理できるようサポートするWORKSの 勤怠管理Botです。"
 

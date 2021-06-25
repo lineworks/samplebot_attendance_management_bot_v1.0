@@ -19,7 +19,7 @@ def get_data():
     :return: Multilingual key string.
     """
     return _("Hello, I'm an attendance management "
-             "bot of LINE WORKS that helps your "
+             "bot of WORKS that helps your "
              "timeclock management and entry.")
 
 

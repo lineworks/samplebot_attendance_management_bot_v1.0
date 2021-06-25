@@ -93,10 +93,10 @@ def sign(account_id):
 def start_content(account_id):
     yield sign(account_id)
 
-    fmt = _("Hello, I'm an attendance management bot of LINE WORKS "
+    fmt = _("Hello, I'm an attendance management bot of WORKS "
             "that helps your timeclock management and entry.")
     content1 = make_i18n_text("Hello, I'm an attendance management bot of "
-                         "LINE WORKS that helps your timeclock "
+                         "WORKS that helps your timeclock "
                          "management and entry.", "start", fmt)
     content2 = image_introduce()
 

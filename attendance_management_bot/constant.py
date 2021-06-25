@@ -112,9 +112,9 @@ API_BO = {
 
             "TZone":
             {
-                "contacts_url": "https://" + DEVELOP_API_DOMAIN + "/"
+                "contacts_url": "https://" + DEVELOP_API_DOMAIN + "/r/"
                                     + API_ID
-                                    + "/contact/getDomainContact/v1"
+                                    + "/contact/v2/accounts/_USER_ACCOUNT_ID_"
             },
             "auth_url": "https://" + AUTH_DOMAIN + "/b/" + API_ID
                         + "/server/token?grant_type=urn%3Aietf%3Aparams%3Aoauth"

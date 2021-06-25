@@ -22,6 +22,6 @@ msgstr "Try now"
 
 #:
 #: /home1/irteam/oneapp_samplebot/attendance_management_bot/actions/start.py:77
-msgid "Hello, I'm an attendance management bot of LINE WORKS that helps your timeclock management and entry."
-msgstr "Hello, I'm an attendance management bot of LINE WORKS that helps your timeclock management and entry."
+msgid "Hello, I'm an attendance management bot of WORKS that helps your timeclock management and entry."
+msgstr "Hello, I'm an attendance management bot of WORKS that helps your timeclock management and entry."
 

@@ -49,24 +49,22 @@ def get_user_info_by_account(account_id):
 
     :return: external key
     """
-    contacts_url = "%s?account=%s" % \
-                       (API_BO["TZone"]["contacts_url"], account_id)
+    contacts_url = API_BO["TZone"]["contacts_url"]
+    contacts_url = contacts_url.replace("_USER_ACCOUNT_ID_", account_id)
+    
     headers = {
         "content-type": "application/x-www-form-urlencoded",
         "charset": "UTF-8",
         "consumerKey": OPEN_API["consumerKey"]
     }
 
-    response = auth_post(contacts_url, headers=headers)
+    response = auth_get(contacts_url, headers=headers)
     if response.status_code != 200 or response.content is None:
         LOGGER.error("get user info failed. url:%s text:%s body:%s",
                     contacts_url, response.text, response.content)
         raise HTTPError(500, "get user info. http return code error.")
     tmp_req = json.loads(response.content)
-    data = tmp_req.get("data", None)
-    if data is None:
-        raise HTTPError(500, "get user info. data filed is None.")
-    name = data.get("name", None)
+    name = tmp_req.get("name", None)
     if name is None:
         raise HTTPError(500, "internal error. name filed is none")
     return name

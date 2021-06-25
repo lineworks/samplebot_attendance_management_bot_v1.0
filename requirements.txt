@@ -45,7 +45,7 @@ python-dateutil==2.8.1
 python-jwt==3.2.4
 pytz==2019.2
 PyYAML==5.1.2
-requests==2.20.0
+requests==2.18.4
 six==1.13.0
 snowballstemmer==2.0.0
 Sphinx==2.2.1
@@ -64,7 +64,7 @@ typing==3.7.4.1
 Unidecode==1.1.1
 unify==0.5
 untokenize==0.1.1
-urllib3==1.24.2
+urllib3==1.22
 uuid==1.30
 uvloop==0.11.0
 wcwidth==0.1.7
