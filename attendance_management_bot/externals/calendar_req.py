@@ -68,9 +68,9 @@ def make_icalendar_data(uid, summary, current, end, begin,
     standard.add('TZOFFSETTO', current.utcoffset())
     standard.add('TZNAME', current.tzname())
 
-    tz = Timezone()
-    tz.add_component(standard)
-    tz.add('TZID', tz)
+    #tz = Timezone()
+    #tz.add_component(standard)
+    #tz.add('TZID', TZone)
 
     event = Event()
     event.add('UID', uid)
@@ -86,7 +86,7 @@ def make_icalendar_data(uid, summary, current, end, begin,
     event.add('DTSTAMP', current)
 
     cal.add_component(event)
-    cal.add_component(tz)
+    #cal.add_component(tz)
     schedule_local_string = bytes.decode(cal.to_ical())
     LOGGER.info("schedule:%s", schedule_local_string)
     return schedule_local_string
